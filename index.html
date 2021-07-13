@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
 
@@ -16,7 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
-    <title>ФлораМаркт</title>
+    
+    <title>ФлораМаркт (лр 5)</title>
 </head>
 <body>
     <nav class="nav">
@@ -30,20 +31,20 @@
             <li class="nav__item">Видео</li>
             <li class="nav__item">Контакты</li>
             <div class="nav__vertborder"></div>
-            <li class="nav__item"><img class="nav__svg" src="pic/user.svg" width="16" height="16">Войти</li>
-            <li class="nav__item"><img class="nav__svg" src="pic/logout.svg" width="16" height="16">Регистрация</li>
+            <li class="nav__item"><img class="nav__svg" src="img/user.svg" width="16" height="16">Войти</li>
+            <li class="nav__item"><img class="nav__svg" src="img/logout.svg" width="16" height="16">Регистрация</li>
         </ul>
 
         <hr class="nav__hr">
     </nav>
 
     <header class="header flex justify-space-between">
-        <div class="header__img align-self-center"><img src="pic/flora-markt.png" width="156" height="41"></div>
-        <div class="header__svg align-self-center"><img src="pic/shopping-cart.svg" width="27" height="27"></div>
+        <div class="header__img align-self-center"><img src="img/flora-markt.png" width="156" height="41"></div>
+        <div class="header__svg align-self-center"><img src="img/shopping-cart.svg" width="27" height="27"></div>
         <div class="header__price align-self-center">
             <p class="header__paragraph">0 ₽</p>
         </div>
-        <div class="header__svg align-self-center"><img src="pic/bars.svg" width="24" height="24"></div>
+        <div class="header__svg align-self-center"><img src="img/bars.svg" width="24" height="24"></div>
     </header>
 
     <div id="header">
@@ -55,24 +56,24 @@
 
         <div class="header__third">
             <div class="header__clock">
-                <img id = "header__clock" src="pic/clock.svg">
+                <img id = "header__clock" src="img/clock.svg">
                 <p class="header__paragraph">Ждем вас с 8:00 до 22:00</p>
             </div>
 
             <div class="header__pointer">
-                <img id="header__pointer" src="pic/marker.svg">
+                <img id="header__pointer" src="img/marker.svg">
                 <p class="header__paragraph">Адреса цветочных центров</p>
             </div>
         </div>
 
         <div class="header__basket">
             <div class="header__starred">
-                <img id="header__heart" src="pic/heart.svg">
+                <img id="header__heart" src="img/heart.svg">
                 <p class="header__paragraph starred">Избранное</p>
             </div>
 
             <div class="header__trash">
-                <img id="header__shopping-cart" src="pic/shopping-cart.svg">
+                <img id="header__shopping-cart" src="img/shopping-cart.svg">
                 <p class="header__paragraph money">0 ₽</p>
             </div>
         </div>
@@ -101,8 +102,8 @@
         <section class="advertisement">
 
             <div class="advertisement_img">
-                <img id="advertisement_img-mobile" src="pic/advertisement-mobile.png" width="320" height="320">
-                <img id="advertisement_img" src="pic/advertisement.png">
+                <img id="advertisement_img-mobile" src="img/advertisement-mobile.png" width="320" height="320">
+                <img id="advertisement_img" src="img/advertisement.png">
             </div>
 
             <div class="advertisement__add flex">
@@ -111,31 +112,45 @@
 
                 <div class="advertisement__link flex">
                     <a id="advertisement__link">Перейти в каталог</a>
-                    <img class="advertisement__link__img" src="pic/angle-right.svg">
+                    <img class="advertisement__link__img" src="img/angle-right.svg">
                 </div>
 
             </div>
 
         </section>
+            
+            <section class="flower-buy">
 
-        <section class="delivery">
+                <div class="flower-buy__title">
+                    <p id="flower-buy__title">СЕЗОННОЕ ПРЕДЛОЖЕНИЕ</p>
+                </div>
+    
+                <div class="flower-buy__img">
+                    <img srcset="img/image-360.png 360w, 
+                    img/image-720.png 720w, 
+                    img/image-1080.png 1080w, 
+                    img/image-1920.png 1920w" src="img/image.png">
+                </div>
+            </section>
 
-            <div class="delivery__slider flex">
-                <div class="delivery__item delivery__painted"></div>
-                <div class="delivery__item"></div>
-                <div class="delivery__item"></div>
-                <div class="delivery__item"></div>
-                <div class="delivery__item"></div> 
-            </div>
+            <section class="delivery">
 
-            <div class="delivery__title">
-                <h1 class="delivery__h1">Доставка цветов по Москве</h1>
-            </div>
+                <div class="delivery__slider flex">
+                    <div class="delivery__item delivery__painted"></div>
+                    <div class="delivery__item"></div>
+                    <div class="delivery__item"></div>
+                    <div class="delivery__item"></div>
+                    <div class="delivery__item"></div> 
+                </div>
+    
+                <div class="delivery__title">
+                    <h1 class="delivery__h1">Доставка цветов по Москве</h1>
+                </div>
 
             <div class="delivery__choice flex">
                 <div class="delivery__choice-item flex">
                     <p class="delivery__paragraph">Цена ...</p>
-                    <img class="delivery__img" src="pic/angle-down.svg" width="16" height="16">
+                    <img class="delivery__img" src="img/angle-down.svg" width="16" height="16">
                 </div>
 
                 <hr class="delivery__hr-mobile">
@@ -143,7 +158,7 @@
 
                 <div class="delivery__choice-item flex">
                     <p class="delivery__paragraph">Цветы ...</p>
-                    <img class="delivery__img" src="pic/angle-down.svg" width="16" height="16">
+                    <img class="delivery__img" src="img/angle-down.svg" width="16" height="16">
                 </div>
 
                 <hr class="delivery__hr-mobile">
@@ -151,7 +166,7 @@
 
                 <div class="delivery__choice-item flex">
                     <p class="delivery__paragraph">Кому ...</p>
-                    <img class="delivery__img" src="pic/angle-down.svg" width="16" height="16">
+                    <img class="delivery__img" src="img/angle-down.svg" width="16" height="16">
                 </div>
 
                 <hr class="delivery__hr-mobile">
@@ -159,7 +174,7 @@
 
                 <div class="delivery__choice-item flex">
                     <p class="delivery__paragraph">Повод ...</p>
-                    <img class="delivery__img" src="pic/angle-down.svg" width="16" height="16">
+                    <img class="delivery__img" src="img/angle-down.svg" width="16" height="16">
                 </div>
 
                 <hr class="delivery__hr-mobile">
@@ -167,7 +182,7 @@
 
                 <div class="delivery__choice-item delivery__rounded flex">
                     <p class="delivery__paragraph">Стиль ...</p>
-                    <img class="delivery__img" src="pic/angle-down.svg" width="16" height="16">
+                    <img class="delivery__img" src="img/angle-down.svg" width="16" height="16">
                 </div>
             </div>
         </section>
@@ -320,7 +335,7 @@
                         </div>
 
                         <div class="description__img">
-                            <img id="description__img" src="pic/woman1.png" width="290" height="193">
+                            <img id="description__img" src="img/woman1.png" width="290" height="193">
                         </div>
 
                         <div class="description__main-subtitle">
@@ -336,7 +351,7 @@
                 </div>
 
                 <div class="description__img">
-                    <img id="description__img" src="pic/woman2.png" width="290" height="193">
+                    <img id="description__img" src="img/woman2.png" width="290" height="193">
                 </div>
 
                 
@@ -355,7 +370,7 @@
                 <div id="id">
 
                 <div class="description__img">
-                    <img id="description__img" src="pic/woman1.png" width="290" height="193">
+                    <img id="description__img" src="img/woman1.png" width="290" height="193">
                 </div>
 
                 <div id="description__text-1">
@@ -392,23 +407,9 @@
                 </div>
 
                     <div class="description__img">
-                        <img id="description__img" src="pic/woman2.png" width="290" height="193">
+                        <img id="description__img" src="img/woman2.png" width="290" height="193">
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="flower-buy">
-
-            <div class="flower-buy__title">
-                <p id="flower-buy__title">СЕЗОННОЕ ПРЕДЛОЖЕНИЕ</p>
-            </div>
-
-            <div class="flower-buy__img">
-                <img srcset="pic/image-360.png 360w, 
-                pic/image-720.png 720w, 
-                pic/image-1080.png 1080w, 
-                pic/image-1920.png 1920w" src="pic/image.png">
             </div>
         </section>
     </main>
